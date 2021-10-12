@@ -6,29 +6,29 @@ colors  = ["red","green","blue","orange","purple","pink","yellow","dark green","
 darkcolors = ["white","red","green","blue","orange","purple","pink","yellow"]
 length = 5
 turtle.bgpic("28648.gif",)
-def tcircles(circle_turtle,color,dis_range,radius):
+def tcircles(cturtle,color,dis_range,radius):
 
-    circle_turtle.color(color)
+    cturtle.color(color)
     for i in range(dis_range):
-        circle_turtle.circle(radius*i)
+        cturtle.circle(radius*i)
 	
-    circle_turtle.up()
-    circle_turtle.goto(0,0)
-    circle_turtle.down()
+    cturtle.up()
+    cturtle.goto(0,0)
+    cturtle.down()
 	
-def ccircles(circle_turtle,dis_range,radius):
+def ccircles(cturtle,dis_range,radius):
     
     for i in range(dis_range):
         color = random.choice(darkcolors)
-        circle_turtle.color(color)
-        circle_turtle.circle(radius*i)
-        circle_turtle.up()
-        circle_turtle.sety((radius*i)*(-1))
-        circle_turtle.down()
+        cturtle.color(color)
+        cturtle.circle(radius*i)
+        cturtle.up()
+        cturtle.sety((radius*i)*(-1))
+        cturtle.down()
 
-    circle_turtle.up()
-    circle_turtle.goto(0,0)
-    circle_turtle.down()
+    cturtle.up()
+    cturtle.goto(0,0)
+    cturtle.down()
 
 
 if __name__ == "__main__":
