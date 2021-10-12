@@ -5,7 +5,7 @@ colors  = ["red","green","blue","orange","purple","pink","yellow","dark green","
            "cyan","saddle brown","dark gray","dark orange","medium purple","magenta"]
 darkcolors = ["white","red","green","blue","orange","purple","pink","yellow"]
 length = 5
-turtle.bgpic()
+turtle.bgpic("28648.gif",)
 def tcircles(circle_turtle,color,dis_range,radius):
 
     circle_turtle.color(color)
